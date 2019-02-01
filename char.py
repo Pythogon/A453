@@ -1,4 +1,5 @@
 import math,random,time # Importing required modules
+maxbonus = 11 # Setting variables
 def rollstats(large,small,basestat,maxstatbonus): # Roll stat function
     statbonustotal = maxstatbonus + basestat
     largedice = random.randint(1,large)
@@ -18,7 +19,6 @@ def write(stn,skl,scr,ign): # Define STN (STreNgth), SKL, (SKiLl), SCR (SCoRe) a
             print("Written data for",ign +'!')
                       
 print("Welcome to your adventure, hero.")
-maxbonus = 11
 while True:
     while True:
         try:
